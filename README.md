@@ -1,68 +1,71 @@
-# Web_Project – Développement d'Application Web Front-End (Angular) - 2023
+# Web_Project – Front-End Web Application Development (Angular) - 2023
 
-> Ce projet contient l'implémentation complète d'une application web développée dans le cadre de ma formation d'ingénieur. L'objectif principal était de maîtriser le développement **Front-End** moderne en utilisant le framework **Angular** et le langage **TypeScript**.
+> This project contains the complete implementation of a web application developed as part of my engineering curriculum. The main objective was to master modern **Front-End** development using the **Angular** framework and the **TypeScript** language.
 
----
-
-## 🎯 Aperçu du Projet
-Ce projet web vise à fournir une **[Décrivez brièvement le but de l'application : ex. interface utilisateur pour une plateforme de gestion, un réseau social, ou une application de visualisation de données]**.
-
-L'architecture est entièrement basée sur le **framework Angular**, garantissant une expérience utilisateur dynamique, modulaire et hautement performante.
+[![Framework](https://img.shields.io/badge/Framework-Angular-red.svg)](https://angular.io/)
+[![Language](https://img.shields.io/badge/Language-TypeScript-blue.svg)](https://www.typescriptlang.org/)
+[![Tool](https://img.shields.io/badge/Tool-npm-red.svg)](https://www.npmjs.com/)
+[![Styling](https://img.shields.io/badge/Styling-SCSS_|_CSS-pink.svg)](https://sass-lang.com/)
 
 ---
 
-## ⚙️ Technologies Utilisées
-Ce projet s'appuie sur le stack technologique suivant :
+## 🎯 Project Overview
+This web project aims to provide a **[Briefly describe the application's purpose: e.g., user interface for a management platform, a social network, or a data visualization application]**.
 
-| Catégorie | Technologie | Rôle dans le Projet |
+The architecture is entirely based on the **Angular framework**, ensuring a dynamic, modular, and highly performant user experience (SPA - Single Page Application).
+
+---
+
+## ⚙️ Technologies Used
+This project relies on the following technology stack:
+
+| Category | Technology | Role in the Project |
 | :--- | :--- | :--- |
-| **Framework** | **Angular (v17+)** | Structure et logique du côté client (SPA). |
-| **Langage** | **TypeScript** | Garantie de la robustesse et de la maintenabilité du code. |
-| **Gestion de Paquets** | **npm / Node.js** | Gestion des dépendances du projet et exécution des scripts. |
-| **Styles** | **CSS / SCSS** | Styles et thématisation de l'application. |
-| **Données** | **JSON** | Fichiers de configuration et/ou de données locales (`database.json`). |
+| **Framework** | **Angular (v17+)** | Client-side structure and logic (SPA). |
+| **Language** | **TypeScript** | Ensures code robustness and maintainability. |
+| **Package Management** | **npm / Node.js** | Manages project dependencies and script execution. |
+| **Styling** | **CSS / SCSS** | Application styling and theming. |
+| **Data** | **JSON** | Configuration and/or local data files (`database.json`). |
 
 ---
 
-## 🚀 Installation et Démarrage
+## 🚀 Installation and Startup
 
-Pour cloner et démarrer l'application en mode développement, suivez ces étapes :
+To clone and start the application in development mode, follow these steps:
 
-### 1. Prérequis
-Assurez-vous d'avoir [Node.js](https://nodejs.org/) et npm (ou Yarn) installés.
+### 1. Prerequisites
+Ensure you have [Node.js](https://nodejs.org/) and npm (or Yarn) installed.
 
-### 2. Cloner le Dépôt
+### 2. Clone the Repository
 
-git clone https://www.google.com/search?q=https://github.com/victorpiana/Web_Project.git cd Web_Project
+```bash
+git clone [https://github.com/victorpiana/Web_Project.git](https://github.com/victorpiana/Web_Project.git)
+cd Web_Project
+---
 
-
-### 3. Installer les Dépendances
-
+### 3. Install Dependencies
 npm install
 
-
-### 4. Démarrer le Serveur de Développement
-
+###4. Start the Development Server
 npm run start
-
-ou
+or
 ng serve
 
-L'application sera accessible dans votre navigateur à l'adresse par défaut : `http://localhost:4200/`.
+The application will be accessible in your browser at the default address: http://localhost:4200/.
+
+## 🛠️ Useful Scripts
+The `package.json` file contains the following scripts:
+
+* `npm run start` : Starts the local development server.
+* `npm run build` : Compiles the project for production (output in the `dist/` folder).
+* `npm run test` : Executes unit tests via Karma.
+* `npm run lint` : Runs the linter to verify code standard compliance.
 
 ---
 
-## 🛠️ Scripts Utiles
-Le fichier `package.json` contient les scripts suivants :
-
-* `npm run start` : Démarre le serveur de développement local.
-* `npm run build` : Compile le projet pour la production (sortie dans le dossier `dist/`).
-* `npm run test` : Exécute les tests unitaires via Karma.
-* `npm run lint` : Exécute le linter pour vérifier le respect des standards de code.
-
-
----
-
-## 👤 Auteur
+## 👤 Author
 **Victor Piana**
-Étudiant Ingénieur 
+Engineering Student
+```bash
+git clone [https://github.com/victorpiana/Web_Project.git](https://github.com/victorpiana/Web_Project.git)
+cd Web_Project
