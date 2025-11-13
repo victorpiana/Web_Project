@@ -1,0 +1,16 @@
+<div *ngIf="animal && refuge" class="details-container">
+  <div class="animal-details">
+    <app-animal-card [animal]="animal" [showDetailsButton]="false"></app-animal-card>
+  </div>
+  <div class="refuge-details">
+    <img *ngIf="refuge.photo" [src]="refuge.photo" alt="Photo du refuge" class="refuge-photo">
+    <h2>Détails du Refuge de {{animal.nom}} </h2>
+    <p><strong>Nom : </strong>{{ refuge.refugeName }}</p>
+    <p><strong>Adresse : </strong><a [href]="refuge.addressUrl" target="_blank">
+      {{ refuge.address }}
+    </a></p>
+    <p><strong>Téléphone : </strong><a [href]="'tel:'">{{ refuge.phone }}</a></p>
+    <p><strong>Email : </strong><a [href]="'mailto:' + refuge.email">{{ refuge.email }}</a></p>
+    
+  </div>
+</div>

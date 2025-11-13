@@ -1,0 +1,6 @@
+<div class="cookie-banner" *ngIf="cookieAvertissement">
+    <p>{{ cookieAvertissement }}</p>
+    <button class="btn-accept" (click)="acceptCookies()">Accepter</button>
+    <button class="btn-decline" (click)="declineCookies()">Refuser</button>
+  </div>
+  

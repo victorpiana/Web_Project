@@ -1,0 +1,9 @@
+<div class="dashboard-container">
+    <h1>Bienvenue {{ refugeName }}</h1>
+    <button (click)="logout()">Se déconnecter</button>
+    <h2>Liste de vos animaux :</h2>
+    <div class="animal-cards-container">
+        <app-animal-card *ngFor="let animal of animals" [animal]="animal" [isDashboard]="true" [showAdopterButton]="false"></app-animal-card>
+    </div>
+</div>
+  

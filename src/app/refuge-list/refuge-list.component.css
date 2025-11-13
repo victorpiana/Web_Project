@@ -1,0 +1,68 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .refuge-list-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+  
+  .refuge-list-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333;
+  }
+  
+  .refuge-card {
+    display: flex;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .refuge-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .refuge-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .refuge-details {
+    flex: 1;
+  }
+  
+  .refuge-details h3 {
+    margin: 0;
+    margin-bottom: 10px;
+    color: #333333;
+  }
+  
+  .refuge-details p {
+    margin: 5px 0;
+    color: #555555;
+  }
+  
+  .refuge-details a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+  
+  .refuge-details a:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,26 @@
+<div class="animal-container">
+      <img [src]="animal.photo" [alt]="'Photo de ' + animal.nom" class="animal-photo">
+      <div class="animal-info">
+        <h2>
+          {{ animal.nom }}
+          <ng-container [ngSwitch]="animal.espece">
+              <span *ngSwitchCase="'Chien'" style="display: inline-block;">🐶</span>
+              <span *ngSwitchCase="'Chat'" style="display: inline-block;">🐱</span>
+              <span *ngSwitchCase="'Perroquet'" style="display: inline-block;">🦜</span>
+              <span *ngSwitchCase="'Lapin'" style="display: inline-block;">🐰</span>
+              <span *ngSwitchCase="'Furet'" style="display: inline-block;">🦦</span>
+              <span *ngSwitchCase="'Poisson Rouge'" style="display: inline-block;">🐠</span>
+              <span *ngSwitchDefault style="display: inline-block;">❓</span>
+          </ng-container>
+        </h2>           
+        <p><strong>Espèce : </strong> <a [routerLink]="['/adoptionplace/espece', animal.espece]">{{ animal.espece }}</a></p>
+        <p><strong>Race : </strong> {{ animal.race }}</p>
+        <p><strong>Âge : </strong> {{ animal.age }} ans</p>
+        <p><strong>Sexe : </strong> {{ animal.sexe }}</p>
+        <p><strong>Refuge : </strong> <a [routerLink]="['/adoptionplace/refuge', animal.refugeName]">{{animal.refugeName}}</a></p>
+        <p class="description">{{ animal.description }}</p>
+        <button class="more-info" *ngIf="showDetailsButton" class="more-info" [routerLink]="['/adoptionplace', animal.id]">Plus d'informations</button>
+        <button *ngIf="showAdopterButton" class="adopter" (click)="OnAdopter(animal.id,animal.nom,'adopté')">Adopter</button>
+        <button *ngIf="isDashboard" class="delete" (click)="OnAdopter(animal.id,animal.nom,'supprimé')">Supprimer</button>
+    </div>
+</div>

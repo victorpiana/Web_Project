@@ -1,0 +1,14 @@
+<div class="refuge-list-container">
+    <h2>Liste des Refuges</h2>
+    <div *ngFor="let refuge of refuges" class="refuge-card">
+      <img [src]="refuge.photo" [alt]="'Photo de ' + refuge.refugeName" class="refuge-photo">
+      <div class="refuge-details">
+        <h3>{{ refuge.refugeName }}</h3>
+        <p><strong>Adresse : </strong> {{ refuge.address }}</p>
+        <p><strong>Téléphone : </strong> <a [href]="'tel:'">{{ refuge.phone }}</a></p>
+        <p><strong>Mail : </strong> <a [href]="'mailto:' + refuge.email">{{ refuge.email }}</a></p>
+        <p><strong><a [routerLink]="['/adoptionplace/refuge', refuge.refugeName]">Liste des animaux</a></strong></p>
+      </div>
+    </div>
+  </div>
+  

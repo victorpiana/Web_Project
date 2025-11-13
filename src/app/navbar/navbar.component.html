@@ -1,0 +1,23 @@
+<div class="navbar">
+  <div class="site-name">
+    <a [routerLink]="['/Home']" class="clickable-h1">
+      <h1>Doggos Online</h1>
+      <img src="../../../assets/doge.png" alt="Logo" class="logo">
+    </a>
+  </div>
+  <div class="user-info" *ngIf="isAuthenticated()">
+    <span class="refuge-name">{{ refugeName }}</span>
+    <img [src]="refugePhoto" alt="Photo du refuge" class="refuge-photo">
+    <button (click)="logout()">Déconnexion</button>
+  </div>
+  <div class="site-menu">
+    <a [routerLinkActive]="'active'" [routerLink]="['/Home']">Accueil</a>
+    <a [routerLinkActive]="'active'" [routerLink]="['/adoptionplace']">Animaux</a>
+    <a [routerLinkActive]="'active'" [routerLink]="['/refuges']">Refuges</a>
+    <a *ngIf="!isAuthenticated()" [routerLinkActive]="'active'" [routerLink]="['/register']">Inscription</a>
+    <a *ngIf="!isAuthenticated()" [routerLinkActive]="'active'" [routerLink]="['/login']">Connexion</a>
+    <a [routerLinkActive]="'active'" [routerLink]="['/About']">A propos</a>
+    <a *ngIf="isAuthenticated()" [routerLinkActive]="'active'" [routerLink]="['/ajouter']">Ajouter un animal</a>
+    <a *ngIf="isAuthenticated()" [routerLinkActive]="'active'" [routerLink]="['/dashboard']">Tableau de bord</a>
+  </div>
+</div>

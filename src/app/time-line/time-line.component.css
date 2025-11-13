@@ -1,0 +1,199 @@
+.career {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto; /* ajustez la hauteur en fonction de vos besoins */
+    background-color:#f7f7fa; /* couleur de fond de la section "career" */
+
+    color: #0d0d0d;
+    margin:  auto;
+    padding: 4 rem 0;
+    overflow: hidden;
+    
+    font-family: 'bebas neue', sans-serif;
+
+  }
+  .timeline{
+    position: relative;
+    min-height: 150px;
+    color:#0d0d0d ;
+    margin-top:16em;
+    overflow: hidden;
+    height: auto;
+  }
+
+  .line {
+    position: absolute;
+    z-index: 2;
+    left: calc(50% - 1px);
+    width: 2px;
+    top: -100%;
+    bottom: -50px;
+    background-color: #0d0d0d;
+    display: none;
+    left: 50%;
+    margin-top: 15px;
+  }
+  
+  .line::before,
+  .line::after {
+    position: absolute;
+    display: block;
+    content: '';
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: #0d0d0d;
+    left: 50%;
+    transform: translateX(-50%);
+    top:-40px;
+  }
+  
+  .line::after {
+    bottom: 0;
+  }
+
+  @media (max-width: 1650px) {
+    .line {
+     z-index: -15;/* Masquer la ligne sur les petits écrans */
+    }
+    .bead{
+      display: none;
+    }
+  }
+  .section{
+    display: flex;
+    opacity:  0;
+    transition: 600ms ease;
+    position: relative;
+    z-index: 1;
+    margin: 50px 0;
+    padding: 1rem;
+    align-items: center;
+    min-height: 300px;
+    
+    margin: 15px;
+  
+  }
+  
+  .section:nth-child(odd){
+    flex-direction: row-reverse;
+    transform: translateX(100%);
+  
+  }
+  .bead{
+    position: absolute;
+    display: block;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: #0d0d0d;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+  }
+  
+  .content1{
+    position: relative;
+    width: 40em;
+    height: 30em;
+    left: 5%;
+    top: -25px;
+   margin: 15px;
+    border-radius: 10px; /* Bords arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: white;
+    
+  }
+.content1:hover{
+    transform: translateY(-3px);
+}
+  .content2{
+    position: relative;
+    width: 40em;
+    height: 30em;
+    top: -5px;
+    right: 5%;
+    margin: 15px;
+    border-radius: 10px; /* Bords arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+  
+  }
+.content2:hover{
+    transform: translateY(-3px);
+}
+  
+  .show-me:nth-child(n){
+    transform: none;
+    opacity: 1;
+  
+  }
+  
+  
+  
+  
+  
+  
+  .Career{
+    margin-top: 200px;
+    text-align:center; font-size:8em; text-transform:uppercase; color:#476a5a; letter-spacing:1px;
+    font-family:'Bebas Neue', serif; font-weight:bold;
+
+  }
+  
+  .content1 h2 {
+    text-transform:uppercase; width:160px; text-align:center; white-space:nowrap;
+    display: inline-block; /* Permet de centrer le titre */
+    font-family: 'Bebas Neue';
+    width: 100%;
+    letter-spacing: 5px;
+    font-size: 3rem;
+  }
+  
+  .content2 h2 {
+    text-transform:uppercase; width:160px; text-align:center; white-space:nowrap;
+    display: inline-block; /* Permet de centrer le titre */
+    font-family: 'Bebas Neue';
+    width: 100%;
+    letter-spacing: 5px;
+    font-size: 3rem;
+  }
+
+
+  
+
+  
+
+  
+  .content1 p{
+   position: relative;
+   top : 20px;
+   font-size:1.5em; color:black; letter-spacing:1px;
+    font-family:sans-serif;
+    display: inline;
+    
+  }
+  
+
+  
+  .content2 p{
+    position: relative;
+    top : 20px;
+    font-size:1.5em; color:black; letter-spacing:1px;
+     font-family:sans-serif;
+     display: inline;
+     
+  }
+  

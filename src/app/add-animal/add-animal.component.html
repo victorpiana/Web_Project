@@ -1,0 +1,55 @@
+<div class="form-container">
+    <form [formGroup]="animalForm" (ngSubmit)="onSubmit()" class="animal-form">
+      <h2>Ajouter un Nouvel Animal</h2>
+  
+      <div class="form-group">
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" formControlName="nom" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="espece">Espèce</label>
+        <select id="espece" formControlName="espece" required>
+          <option value="">Sélectionnez une espèce</option>
+          <option value="Chien">Chien</option>
+          <option value="Chat">Chat</option>
+          <option value="Lapin">Lapin</option>
+          <option value="Furet">Furet</option>
+          <option value="Poisson Rouge">Poisson Rouge</option>
+          <option value="Perroquet">Perroquet</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <label for="race">Race</label>
+        <input type="text" id="race" formControlName="race" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="age">Âge</label>
+        <input type="number" id="age" formControlName="age" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="sexe">Sexe</label>
+        <select id="sexe" formControlName="sexe" required>
+          <option value="" disabled>Sélectionner</option>
+          <option value="Mâle">Mâle</option>
+          <option value="Femelle">Femelle</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea id="description" formControlName="description" required></textarea>
+      </div>
+  
+      <div class="form-group">
+        <label for="photo">Lien de la photo</label>
+        <input type="url" id="photo" formControlName="photo" required>
+      </div>
+  
+      <button type="submit" class="submit-btn">Ajouter</button>
+    </form>
+  </div>
+  

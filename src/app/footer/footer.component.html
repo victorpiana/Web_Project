@@ -1,0 +1,49 @@
+<footer>
+  <div class="footer-content">
+    <div class="footer-section about">
+      <h1 class="logo-text"><span>Doggos</span>Online</h1>
+      <p>
+        Vous voulez en savoir plus ? Découvrez nos objectifs et nos activités pour protéger les animaux.
+      </p>
+      <div class="contact">
+        <span><i class="fas fa-phone"></i> &nbsp; +33 (0)1 30 95 21 28</span>
+        <span><i class="fas fa-envelope"></i> &nbsp; contact&#64;doggosonline.com</span>
+      </div>
+      <div class="socials">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-section links">
+      <h2>Liens rapides</h2>
+      <br>
+      <ul>
+        <a [routerLink]="'Home'"><li>Accueil</li></a>
+        <a [routerLink]="'About'"><li>A propos</li></a>
+        <a href="#"><li>Services</li></a>
+        <a href="#"><li>Contact</li></a>
+        <a href="#"><li>FAQ</li></a>
+      </ul>
+    </div>
+
+    <div class="footer-section contact-form">
+      <h2>Contactez-nous</h2>
+      <br>
+      <form action="index.html" method="post">
+        <input type="email" name="email" class="text-input contact-input" placeholder="Votre email...">
+        <textarea name="message" class="text-input contact-input" placeholder="Votre message..."></textarea>
+        <button class="btn btn-big">
+          <i class="fas fa-envelope"></i>
+          Envoyer
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    &copy; doggosonline.com | Conçu par DoggosOnline Web Team
+  </div>
+</footer>
