@@ -10,6 +10,7 @@
 ---
 
 ## 🎯 Project Overview
+
 This web project aims to provide a **[Briefly describe the application's purpose: e.g., user interface for a management platform, a social network, or a data visualization application]**.
 
 The architecture is entirely based on the **Angular framework**, ensuring a dynamic, modular, and highly performant user experience (SPA - Single Page Application).
@@ -17,6 +18,7 @@ The architecture is entirely based on the **Angular framework**, ensuring a dyna
 ---
 
 ## ⚙️ Technologies Used
+
 This project relies on the following technology stack:
 
 | Category | Technology | Role in the Project |
@@ -34,26 +36,40 @@ This project relies on the following technology stack:
 To clone and start the application in development mode, follow these steps:
 
 ### 1. Prerequisites
+
 Ensure you have [Node.js](https://nodejs.org/) and npm (or Yarn) installed.
 
 ### 2. Clone the Repository
 
 ```bash
-git clone [https://github.com/victorpiana/Web_Project.git](https://github.com/victorpiana/Web_Project.git)
+git clone https://github.com/victorpiana/Web_Project.git
 cd Web_Project
----
+```
 
 ### 3. Install Dependencies
+
+```bash
 npm install
+```
 
-###4. Start the Development Server
+### 4. Start the Development Server
+
+```bash
 npm run start
-or
-ng serve
+```
 
-The application will be accessible in your browser at the default address: http://localhost:4200/.
+or
+
+```bash
+ng serve
+```
+
+The application will be accessible in your browser at the default address: [http://localhost:4200/](http://localhost:4200/)
+
+---
 
 ## 🛠️ Useful Scripts
+
 The `package.json` file contains the following scripts:
 
 * `npm run start` : Starts the local development server.
@@ -64,8 +80,19 @@ The `package.json` file contains the following scripts:
 ---
 
 ## 👤 Author
-**Victor Piana**
+
+**Victor Piana**  
 Engineering Student
-```bash
-git clone [https://github.com/victorpiana/Web_Project.git](https://github.com/victorpiana/Web_Project.git)
-cd Web_Project
+
+---
+
+## 📄 License
+
+This project is part of an academic curriculum and is provided for educational purposes.
+
+---
+
+
+## ⭐ Show your support
+
+Give a ⭐️ if this project helped you!
