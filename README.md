@@ -92,7 +92,3 @@ This project is part of an academic curriculum and is provided for educational p
 
 ---
 
-
-## ⭐ Show your support
-
-Give a ⭐️ if this project helped you!
